@@ -29,7 +29,11 @@ EditorBuildSettings:
     path: Assets/SampleScenes/Scenes/Particles.unity
   - enabled: 0
     path: Assets/SampleScenes/Scenes/RollerBall.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Lobby.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Created Assets/Level.unity
+  - enabled: 1
+    path: Assets/Created Assets/Scenes/Lobby.unity
+  - enabled: 1
+    path: Assets/Created Assets/Scenes/Level.unity

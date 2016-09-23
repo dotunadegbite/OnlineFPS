@@ -30,6 +30,9 @@ public class PlayerShoot : NetworkBehaviour {
         {
             Shoot();
         }
+
+        if (PauseMenuScript.isPaused)
+            return;
     }
     [Client]
     void Shoot()

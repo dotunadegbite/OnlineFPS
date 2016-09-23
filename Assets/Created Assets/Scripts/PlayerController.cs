@@ -34,6 +34,8 @@ public class PlayerController : MonoBehaviour {
 
     void Update()
     {
+        if (PauseMenuScript.isPaused)
+            return;
         //Calculate velocity as a 3D vector
 
         float _xMovement = Input.GetAxisRaw("Horizontal");
@@ -62,7 +64,7 @@ public class PlayerController : MonoBehaviour {
 
         //Apply high jump
         Vector3 _thrusterForce = Vector3.zero;
-        if (Input.GetButton("Jump"))
+        if (Input.GetButtonDown("Jump"))
         {
             _thrusterForce = Vector3.up * thrusterForce;
             SetJointSettings(0f);

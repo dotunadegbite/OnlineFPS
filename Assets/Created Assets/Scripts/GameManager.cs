@@ -6,8 +6,8 @@ public class GameManager : MonoBehaviour {
     public MatchSettings matchSettings;
     public static GameManager instance;
 
-    [SerializeField]
-    private GameObject sceneCamera;
+ 
+    public GameObject sceneCamera;
 
     void Awake()
     {
